@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+/* header*/
+.header{
+    background-color: red;
+}
+.header .container{
+    width: 80%;
+    height: 200px;
+    margin: auto;
+}
+.header .container .logo{
+    width: 40%;
+    float: left;
+}
+.header .container ul {
+    width: 60%;
+    float: left;
+}
+.header .clear{
+    clear: both; 
+} /* solve overflow probleme*/
+.container .logo img{
+    width: 25%;
+}
+.header .nav{
+    list-style: none;
+}
+.header .nav li{
+    display: inline-block;
+}
+.header .nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 14px;
+    display: block;
+
+}
