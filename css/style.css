@@ -1,15 +1,55 @@
+
+/* فهرست
+A / common styles
+B / General Styles 
+C / Header
+D / Sections
+      1 - Home section 
+      2 - About section 
+      3 - Portofolio section 
+      4 - Services section 
+      5 - Prices section 
+      6 - Team section 
+      7 - Blog section 
+      8 - contact section       
+H ) Footer            
+*/
+
+/* A / common 
+1-container 
+2-oppacity hover
+3-section header 
+4- section padding
+5- hover effect left to right 
+6 - hover efect top to right 
+7 - overlay
+*/
+
+/* B / General section */
 *{
     margin: 0;
     padding : 0;
     box-sizing: border-box;
 }
-/* header*/
+button{
+    font-family: inherit;
+    
+}
+.opcity-hover{
+    transition: opacity.5s;
+}
+.opcity-hover:hover{
+    opacity: 0.8;
+}
+/* C header*/
 .header{
-    background-color: red;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 .header .container{
     width: 80%;
-    height: 200px;
+    height: 20%;
     margin: auto;
 }
 .header .container .logo{
@@ -25,17 +65,93 @@
 } /* solve overflow probleme*/
 .container .logo img{
     width: 25%;
+    margin-top: 8px;
 }
 .header .nav{
     list-style: none;
+    margin-top: 10px;
+    text-align: right;
 }
 .header .nav li{
     display: inline-block;
+    text-align: right;
 }
 .header .nav li a {
     text-decoration: none;
     color: white;
     padding: 20px 14px;
-    display: block;
+        display: block;
+        font-size: 14px;
 
 }
+.header .nav li a::after,.header .nav li a.active::after {
+    content: "";
+    background-color: rgb(81, 247, 81);
+    height: 3px;
+    display: block;
+}
+.header .nav li a::after{
+    width: 0%;
+}
+.header .nav li a.active::after {
+    width: 100%;
+}
+
+
+.header .nav li a:hover::after {  
+    width: 100%;   
+}
+
+/* D-1 Home section*/
+.home{
+    background-image: url(../images/background/background1.webp);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.overlay {
+    background-color:rgba(0, 0,0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home .homecontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.home .homecontent .title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.home .homecontent .descr {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+.home .homecontent .btn {
+    min-width: 150px;
+    padding-bottom: 9px;
+    padding: 9px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 16;
+}
+.home .homecontent .startbutton {
+   background-color: white;
+   margin-right: 10px;
+   color: black;
+}
+.home .homecontent .learnbutton {
+    background-color:#6195ff ;
+    color: white;
+ }
+ 
