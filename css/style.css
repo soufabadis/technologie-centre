@@ -39,8 +39,25 @@ button{
     transition: opacity.5s;
 }
 .opcity-hover:hover{
-    opacity: 0.8;
+    opacity: 0.6;
 }
+.head-section{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.head-section .title-section{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.head-section .line{
+    height:  3px;
+    width:  75px;
+    background-color: #6195ff;
+    display: block;
+    margin: 0 auto 70px auto;
+}
+
 /* C header*/
 .header{
     position: fixed;
@@ -62,7 +79,8 @@ button{
 }
 .header .clear{
     clear: both; 
-} /* solve overflow probleme*/
+} 
+/* solve overflow probleme */
 .container .logo img{
     width: 25%;
     margin-top: 8px;
@@ -72,11 +90,11 @@ button{
     margin-top: 10px;
     text-align: right;
 }
-.header .nav li{
+.header .nav > li{
     display: inline-block;
     text-align: right;
 }
-.header .nav li a {
+.header .nav > li a {
     text-decoration: none;
     color: white;
     padding: 20px 14px;
@@ -84,22 +102,55 @@ button{
         font-size: 14px;
 
 }
-.header .nav li a::after,.header .nav li a.active::after {
+.header .nav > li > a::after,.header .nav > li > a.active::after {
     content: "";
-    background-color: rgb(81, 247, 81);
+    background-color:#6195ff;
     height: 3px;
     display: block;
+    transition: width.5s;
 }
-.header .nav li a::after{
+.header .nav > li > a::after{
     width: 0%;
 }
-.header .nav li a.active::after {
+.header .nav > li > a.active::after {
     width: 100%;
 }
 
 
-.header .nav li a:hover::after {  
+.header .nav > li > a:hover::after {  
     width: 100%;   
+}
+ .dropdown-menu .dropdown {
+    display: block;
+    padding: 3px;
+    position: absolute;
+   
+}
+ .dropdown-menu{
+    position: relative;
+   
+} 
+.dropdown-menu .dropdown li {
+    width: 70px;
+    background-color: #6195ff;
+    text-align: center;
+    top: -200%;
+    left: -27%;
+    position: absolute;
+}
+.dropdown-menu .dropdown {
+    visibility: hidden;
+    opacity: 0; 
+}
+
+.dropdown-menu .dropdown li a {
+    text-decoration: none;
+    display: block;
+    width: 70px;
+}
+.dropdown-menu:hover.dropdown-menu .dropdown{
+    visibility: visible;
+    opacity: 1;
 }
 
 /* D-1 Home section*/
