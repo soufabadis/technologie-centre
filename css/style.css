@@ -41,6 +41,7 @@ button{
 .opcity-hover:hover{
     opacity: 0.6;
 }
+
 .head-section{
     text-align: center;
     margin-bottom: 20px;
@@ -55,14 +56,40 @@ button{
     width:  75px;
     background-color: #6195ff;
     display: block;
-    margin: 0 auto 70px auto;
+    margin: 35px auto 70px auto;
 }
+.ltr-effect{
+position: relative;
+
+}
+.ltr-effect:after{
+    content: "";
+    width: 0%;
+    background-color: #333;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: width 0.1s;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.about-item:hover.ltr-effect:after {
+
+width:100%;
+}
+/* .container{
+    overflow: hidden;
+} */
 
 /* C header*/
 .header{
     position: fixed;
     width: 100%;
     z-index: 5;
+    background-color: #333333;
 }
 .header .container{
     width: 80%;
@@ -124,11 +151,12 @@ button{
     display: block;
     padding: 3px;
     position: absolute;
+    
    
 }
  .dropdown-menu{
     position: relative;
-   
+    
 } 
 .dropdown-menu .dropdown li {
     width: 70px;
@@ -141,6 +169,7 @@ button{
 .dropdown-menu .dropdown {
     visibility: hidden;
     opacity: 0; 
+    list-style-type: none;   
 }
 
 .dropdown-menu .dropdown li a {
@@ -205,4 +234,46 @@ button{
     background-color:#6195ff ;
     color: white;
  }
- 
+ /* about section */
+ .about{
+padding-top:  120px; 
+padding-bottom: 410px;
+ }
+ .about-item{
+    float: left;
+    width: 30%;
+    text-align: center;
+    text-transform:capitalize ;
+    padding : 30px 15px;
+    border-width: 1px;
+    border-color: #e8e8e8;
+    border-style: solid;
+ }
+  .about-content{
+    float: left;
+ }
+  
+  .about-item.ng{
+    margin: 0  3%;
+  }
+  .about-item .fa-mobile , 
+  .about-item .fa-magic , 
+  .about-item .fa-cogs{
+    margin-bottom: 10px;
+    color: #6195ff;
+  }
+  .about-item .about-item-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  .about-item .about-item-descr{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  .about-item-link{
+    text-transform: capitalize;
+    color:#6195ff;
+  }
+  .container2{
+    padding-left: 40px;
+  }
