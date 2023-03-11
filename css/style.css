@@ -49,14 +49,14 @@ button{
 .head-section .title-section{
     font-size: 35px;
     text-transform: capitalize;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .head-section .line{
     height:  3px;
     width:  75px;
     background-color: #6195ff;
     display: block;
-    margin: 35px auto 70px auto;
+    margin: 35px auto 90px auto;
 }
 .ltr-effect{
 position: relative;
@@ -236,8 +236,9 @@ width:100%;
  }
  /* about section */
  .about{
-padding-top:  120px; 
+padding-top:  150px; 
 padding-bottom: 410px;
+
  }
  .about-item{
     float: left;
@@ -265,10 +266,14 @@ padding-bottom: 410px;
   .about-item .about-item-title{
     text-transform: capitalize;
     margin-bottom: 10px;
+    transition: color .0.1s;
+    color: black;
   }
   .about-item .about-item-descr{
     text-transform: capitalize;
     margin-bottom: 10px;
+    transition: color .0.1s;
+    color: black;
   }
   .about-item-link{
     text-transform: capitalize;
@@ -277,3 +282,89 @@ padding-bottom: 410px;
   .container2{
     padding-left: 40px;
   }
+  .about-item:hover .about-item-title,.about-item:hover .about-item-descr{
+        color: white;
+  }
+    /*portofolio section*/
+    .portofolio-section{
+        padding-top:  120px; 
+        padding-bottom: 410px;
+        background-color: #f9f9f9;
+        width: 100%;
+        height: 100%;
+
+    }
+    .portofolio-content {
+        margin: auto auto auto 70px  ;
+        
+    }
+    .portofolio-item{
+        float: left;
+        width: 30%;
+        height: 200px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .portofolio-item img{
+        
+        width: 70%;
+        height: 100%;
+        display: block;
+        margin: auto;
+    }
+  /* .portofolio-item-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0,0, 0.6);
+  } */
+  .portofolio-item .layer-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0,0, 0.4) ;
+    z-index: 2;
+  }
+ .portofolio-item-content{
+    position: absolute;
+    top: 50%;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+    text-align: center;
+ }
+ .portofolio-item-content .category{
+    font-size: 25;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    display:inline-block;
+ }
+ .portofolio-item-content .portofolio-item-content-descr{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+ 
+ }
+ .portofolio-item-content .fa-search{
+color: white;
+ }
+ .portofolio-item-content .fa-edit{
+    color: white;
+     }
+     .portofolio-item-content a {
+        background-color: #6195ff;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        padding-top: 10px;
+     }
+
+     .portofolio-item-content a li {
+        
+     }
+     
