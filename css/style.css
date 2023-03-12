@@ -80,9 +80,16 @@ position: relative;
 
 width:100%;
 }
-/* .container{
-    overflow: hidden;
-} */
+ 
+.pdy{
+    padding-top:  150px; 
+padding-bottom: 410px;
+}
+.general-container{
+    width: 80%;
+    margin: auto;
+   
+}
 
 /* C header*/
 .header{
@@ -328,6 +335,9 @@ padding-bottom: 410px;
     width: 100%;
     background-color: rgba(0, 0,0, 0.4) ;
     z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .0.5s;
   }
  .portofolio-item-content{
     position: absolute;
@@ -364,7 +374,65 @@ color: white;
         padding-top: 10px;
      }
 
-     .portofolio-item-content a li {
-        
-     }
-     
+    .Portofolio-item:hover .layer-info {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /*offer section stylesheet*/
+    .offer-section {
+        margin-top: 300px;
+    }
+    .offer-content{
+     overflow: hidden;
+     /* float: left; */
+    }
+    .offer-item{
+       float: left;
+       width: 30%; 
+       margin-bottom: 10px
+       ;
+       border:  solid 1px  ;
+       border-color: #e8e8e8;
+       padding: 20px 15px 30px 70px ;
+       position: relative;
+       transition: width .0.5;
+    }
+    .mg{
+        margin: 0 5%;
+    }
+    .offer-item .fa-diamond ,.offer-item .fa-cogs,.fa-rocket,.fa-pencil,.fa-flask{
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        color: #6195ff ;
+    }
+    .offer-title{
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        transition: color .0.5s;
+    }
+    .offer-descr{
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        color: #999;
+        line-height: 1.6;
+        transition: color .0.5s;
+
+    }
+    .offer-item:hover.ltr-effect:after {
+
+        width:100%;
+    
+        }
+        .offer-item:hover .offer-title {
+
+            color: white;
+            }
+       
+            .offer-item:hover .offer-descr {
+
+                color: white;
+                }
+           
+               
